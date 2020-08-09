@@ -1,0 +1,19 @@
+
+//An example to define an instance method and call the method using object//
+
+public class InstMethodCallCalculator {
+	
+	int sum (int a, int b) {
+	int result=a + b;
+	return result;
+	}	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InstMethodCallCalculator objCall = new InstMethodCallCalculator();
+		int reVal = objCall.sum(10,20);
+        System.out.println("The total sum is - " + reVal);
+        //The reVal should have = 30//
+	}
+
+}
