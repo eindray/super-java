@@ -1,0 +1,27 @@
+class Points{
+	int x=10,y=-5;
+}
+
+public class MethodPORDemo {
+	
+	void changePoints(Points p){
+		System.out.println("x="+p.x);
+		System.out.println("y="+p.y);
+		p.x=-5;
+		p.y=10;
+		System.out.println("x="+p.x);
+		System.out.println("y="+p.y);
+		}
+	
+		public static void main(String args[]){
+		Points pObj=new Points();
+		MethodPORDemo mObj=new MethodPORDemo();
+		mObj.changePoints(pObj);
+    
+    /* Display
+    x=10
+    y=-5
+    x=-5
+    y=10 */
+		}
+	}
