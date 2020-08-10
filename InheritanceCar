@@ -1,0 +1,12 @@
+//Subclass (Child)
+class InheritanceCar extends InheritanceExample{
+	private String modelName = "Mustang";	
+
+
+	public static void main(String args[])
+	{
+		InheritanceCar myCar = new InheritanceCar();
+		myCar.honk();
+		System.out.println(myCar.brand + " " + myCar.modelName);
+	}
+}
